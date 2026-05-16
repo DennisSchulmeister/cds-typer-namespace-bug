@@ -1,0 +1,26 @@
+{
+  "name": "typer-bug",
+  "version": "1.0.0",
+  "dependencies": {
+    "@sap/cds": "^9"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2",
+    "@cap-js/cds-types": "^0.16.0",
+    "@types/node": "^24.0.0",
+    "tsx": "^4",
+    "typescript": "^6.0.3",
+    "@cap-js/cds-typer": "^0.39.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "build:cds": "cds build --production",
+    "build:cds-types": "cds-typer \"*\" --outputDirectory @cds-models",
+    "build:ts": "tsc --noEmit",
+    "build": "npm run build:cds-types && npm run build:cds && npm run build:ts"
+  },
+  "private": true,
+  "imports": {
+    "#cds-models/*": "./@cds-models/*/index.js"
+  }
+}
