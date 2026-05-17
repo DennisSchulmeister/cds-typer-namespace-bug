@@ -1,6 +1,7 @@
 {
-  "name": "typer-bug",
+  "name": "@dschulmeis/cds-typer-namespace-bug",
   "version": "1.0.0",
+  "private": true,
   "dependencies": {
     "@sap/cds": "^9"
   },
