@@ -7,6 +7,9 @@
 Description
 -----------
 
+See [cds-typer issue 610](https://github.com/cap-js/cds-typer/issues/610).
+The bug is fixed in version 0.39.1
+
 This repository contains a minimal "working" example to reproduce a bug that
 has been introduced in `@cap-js/cds-typer` version 0.39.0. The generated types
 don't build with TypeScript, anymore. Run `npm run build` to reproduce:
